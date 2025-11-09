@@ -12,13 +12,17 @@ import Buttons from "./pages/UiElements/Buttons";
 import LineChart from "./pages/Charts/LineChart";
 import BarChart from "./pages/Charts/BarChart";
 import Calendar from "./pages/Calendar";
-import BasicTables from "./pages/Tables/BasicTables";
 import FormElements from "./pages/Forms/FormElements";
 import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
-import CrearProducto from "./pages/Productos/CrearProducto";
+import ProductModal from "./pages/Productos/ProductModal";
+import ProductInventory from "./pages/Productos/ProductInventory";
+import UserManagement from "./pages/User/UserManagement";
+import TagManagement from "./pages/Tags/TagManagement";
+import SizeManagement from "./pages/Sizes/SizeManagement";
+import ColorManagement from "./pages/Colors/ColorManagement";
 
 export default function App() {
   return (
@@ -39,8 +43,12 @@ export default function App() {
             <Route path="/form-elements" element={<FormElements />} />
 
             {/* Tables */}
-            <Route path="/productos" element={<BasicTables />} />
-            <Route path="/crear-productos" element={<CrearProducto />} />
+            <Route path="/productos" element={<ProductInventory />} />
+            <Route path="/product-modal" element={<ProductModal />} />
+            <Route path="/user-management" element={<UserManagement />} />
+            <Route path="/tag-management" element={<TagManagement />} />
+            <Route path="/size-management" element={<SizeManagement />} />
+            <Route path="/color-management" element={<ColorManagement />} />
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
             <Route path="/avatars" element={<Avatars />} />
