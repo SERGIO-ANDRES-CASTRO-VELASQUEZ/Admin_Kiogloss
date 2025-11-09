@@ -20,9 +20,7 @@ import Home from "./pages/Dashboard/Home";
 import ProductModal from "./pages/Productos/ProductModal";
 import ProductInventory from "./pages/Productos/ProductInventory";
 import UserManagement from "./pages/User/UserManagement";
-import TagManagement from "./pages/Tags/TagManagement";
-import SizeManagement from "./pages/Sizes/SizeManagement";
-import ColorManagement from "./pages/Colors/ColorManagement";
+import AdminManagement from "./pages/Admin/AdminManagement";
 
 export default function App() {
   return (
@@ -45,10 +43,7 @@ export default function App() {
             {/* Tables */}
             <Route path="/productos" element={<ProductInventory />} />
             <Route path="/product-modal" element={<ProductModal />} />
-            <Route path="/user-management" element={<UserManagement />} />
-            <Route path="/tag-management" element={<TagManagement />} />
-            <Route path="/size-management" element={<SizeManagement />} />
-            <Route path="/color-management" element={<ColorManagement />} />
+            <Route path="/admin-management" element={<AdminManagement />} />
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
             <Route path="/avatars" element={<Avatars />} />

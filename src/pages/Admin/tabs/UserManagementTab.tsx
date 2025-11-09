@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { apiService } from '../../utils/api';
+import { apiService } from '../../../utils/api';
 
 interface User {
   id: number;
@@ -8,7 +8,7 @@ interface User {
   role: string;
 }
 
-const UserManagement: React.FC = () => {
+const UserManagementTab: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
 
   const fetchUsers = async () => {
@@ -86,4 +86,4 @@ const UserManagement: React.FC = () => {
   );
 };
 
-export default UserManagement;
+export default UserManagementTab;
