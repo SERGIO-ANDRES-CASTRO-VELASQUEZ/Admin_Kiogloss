@@ -46,6 +46,26 @@ const navItems: NavItem[] = [
     name: "Perfil",
     path: "/profile",
   },
+  {
+    icon: <UserCircleIcon />,
+    name: "User Management",
+    path: "/user-management",
+  },
+  {
+    icon: <TableIcon />,
+    name: "Tag Management",
+    path: "/tag-management",
+  },
+  {
+    icon: <TableIcon />,
+    name: "Size Management",
+    path: "/size-management",
+  },
+  {
+    icon: <TableIcon />,
+    name: "Color Management",
+    path: "/color-management",
+  },
   /*{
     name: "Forms",
     icon: <ListIcon />,
