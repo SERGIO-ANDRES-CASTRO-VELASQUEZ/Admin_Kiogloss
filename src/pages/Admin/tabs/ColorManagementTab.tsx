@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { apiService } from '../../utils/api';
+import { apiService } from '../../../utils/api';
 
 interface Color {
   id: number;
   name: string;
 }
 
-const ColorManagement: React.FC = () => {
+const ColorManagementTab: React.FC = () => {
   const [colors, setColors] = useState<Color[]>([]);
   const [newColorName, setNewColorName] = useState('');
   const [editingColor, setEditingColor] = useState<Color | null>(null);
@@ -124,4 +124,4 @@ const ColorManagement: React.FC = () => {
   );
 };
 
-export default ColorManagement;
+export default ColorManagementTab;

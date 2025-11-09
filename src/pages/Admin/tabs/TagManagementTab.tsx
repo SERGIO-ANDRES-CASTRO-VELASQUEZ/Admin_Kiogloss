@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { apiService } from '../../utils/api';
+import { apiService } from '../../../utils/api';
 
 interface Tag {
   id: number;
   name: string;
 }
 
-const TagManagement: React.FC = () => {
+const TagManagementTab: React.FC = () => {
   const [tags, setTags] = useState<Tag[]>([]);
   const [newTagName, setNewTagName] = useState('');
   const [editingTag, setEditingTag] = useState<Tag | null>(null);
@@ -124,4 +124,4 @@ const TagManagement: React.FC = () => {
   );
 };
 
-export default TagManagement;
+export default TagManagementTab;
